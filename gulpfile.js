@@ -89,6 +89,6 @@ exports.browsersync = browsersync;
 exports.watching = watching;
 exports.images = images;
 exports.cleanDist = cleanDist;
-exports.build = series(cleanDist, build);
+exports.build = series(cleanDist, images, build);
 
 exports.default = parallel(styles, scripts, browsersync, watching);
