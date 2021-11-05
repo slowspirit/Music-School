@@ -412,9 +412,9 @@
   .slick-arrow{
     background-color: transparent;
     border: none;
-    width: 80px;
-    height: 80px;
-    font-size: 80px;
+    width: 30px;
+    height: 30px;
+    // font-size: 80px;
     color: rgba(255,255,255,0.5);
     cursor: pointer;
     position: absolute;
@@ -423,11 +423,32 @@
     z-index: 5;
   }
   .slick-prev{
-    left: -100px;
+    left: 0;
   }
   .slick-next{
-    right: -100px;
+    right: 0;
   }
+  .slick-dots{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 20px;
+      li button{
+        font-size: 0;
+        border: none;
+        width: 10px;
+        height: 10px;
+        background-color: rgba(255, 255, 255, 0.5);
+        border-radius: 50%;
+        cursor: pointer;
+      }
+      li + li{
+        margin-left: 10px;
+      }
+      li.slick-active button{
+        background-color: orangered;
+      }
+    }
 }
 
 .gallery{
