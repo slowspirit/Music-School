@@ -1,4 +1,7 @@
 $(function () {
+  $('.menu__btn, .menu__list-link').on('click', function () {
+    $('.menu__list').toggleClass('menu__list--active');
+  });
 
   $(".menu a, .footer__logo").on("click", function (event) {
     event.preventDefault();
@@ -20,5 +23,14 @@ $(function () {
     nextArrow: '<button type="button" class="slick-next">></button>',
     autoplay: true,
     autoplaySpeed: 5000,
+    responsive: [
+      {
+        breakpoint: 1100,
+        settings: {
+          arrows: false,
+          dots: true,
+        }
+      }
+    ]
   });
 });

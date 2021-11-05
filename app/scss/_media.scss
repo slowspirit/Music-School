@@ -1,0 +1,472 @@
+@media (max-width: 1440px){
+  .reviews{
+    .slick-prev{
+      left: -20px;
+    }
+    .slick-next{
+      right: -20px;
+    }
+  }
+}
+
+@media (max-width: 1230px){
+  .cost{
+    &__item{
+      &:first-child{ 
+        &::after{
+          display: none;
+        }
+      }
+    }
+  }
+  .footer{
+    &__logo{
+      font-size: 18px;
+      margin-right: 25px;
+    }
+  }
+}
+
+@media (max-width: 1100px){
+  ul.menu__list{
+    padding: 60px 0 30px;
+  }
+  .menu{ 
+    &__list{
+      position: absolute;
+      padding: 60px 0 30px;
+      left: 0;
+      right: 0;
+      top: 0;
+      background-color: #222;
+      display: block;
+      text-align: center;
+      transform: translateX(-200%);
+      transition: all .3s;  
+    }
+    .menu__list.menu__list--active {
+      transform: translateX(0%);    
+    }
+    &__list-item + .menu__list-item{
+      margin-left: 0;
+    }
+    &__list-item{
+      margin: 30px 0;
+    }
+    &__list-link{
+      font-size: 22px;
+    }
+  }
+  
+  .menu__btn{
+    display: block;
+  }
+
+  .header{
+    &__top{
+      justify-content: space-between;
+    }
+    &__logo{
+      margin: auto;
+      text-align: center;
+    }
+  }
+
+  .about{
+    &__info-img{
+      height: 500px;
+    }
+  }
+  
+  .team{
+    &__inner{
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+    }
+    &__item{
+      margin: 0 20px 20px;
+    }
+  }
+
+  .reviews{
+    .slick-arrow{
+      display: none;
+    }
+    .slick-dots{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 20px;
+      li button{
+        font-size: 0;
+        border: none;
+        width: 10px;
+        height: 10px;
+        background-color: rgba(255, 255, 255, 0.5);
+        border-radius: 50%;
+        cursor: pointer;
+      }
+      li + li{
+        margin-left: 10px;
+      }
+      li.slick-active button{
+        background-color: orangered;
+      }
+    }
+  }
+  
+  .footer{
+    &__inner{
+      align-items: center;
+    }
+    &__logo{
+      display: none;
+    }
+    &__top{
+      order: 1;
+      margin-top: 50px;
+      margin-bottom: 0;
+    }
+    &__social{
+      margin: 0 auto;
+    }
+    &__social-link:first-child{
+      margin-left: 0;
+    }
+    &__policity{
+      margin-right: 20px;
+    }
+    &__agreement{
+      margin-right: 0;
+    }
+  }
+}
+
+@media (max-width: 1000px){
+  .reviews{
+    &__item{
+      width: 100%;
+      padding: 30px 30px;
+    }
+  }
+}
+
+@media (max-width: 950px){
+  .cost{
+    &__inner{
+      display: flex;
+      flex-wrap: wrap;
+    }
+    &__item{
+      width: 100%;
+      padding-top: 10px;
+      text-align: center;
+      background-color: rgba(89, 40, 36,.7);
+      &:first-child{
+        margin-bottom: 20px;
+      }
+    }
+    &__item-title{
+      display: inline-block;
+      vertical-align: middle;
+      margin: 0 auto;
+      padding-bottom: 5px;
+      border-bottom: 2px solid #fff;
+    }
+    &__item-info{
+      background: none;
+    }
+  }
+  .gallery{
+    &__inner{
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 30px;
+    } 
+  }
+}
+
+@media (max-width: 920px){
+  .header{
+    &__title{
+      max-width: 750px;
+    }
+  }
+  .courses{
+    padding: 60px 0;
+    &__inner{
+      margin: 20px auto;
+    }
+  }
+}
+
+@media (max-width: 770px){
+  .header{
+    &__title{
+      font-size: 50px;
+      line-height: 60px;
+    }
+  }
+  .about{
+    padding: 90px 0;
+    &__inner{
+      align-items: start;
+    }
+    &__info-img{
+      height: 400px;
+    }
+  }
+  .numbers{
+    &__inner{
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    &__item{
+      margin: 0 60px 40px;
+    }
+  }
+  
+  .courses{
+    padding: 90px 0;
+    &__item-title{
+      margin-top: 0;
+    }
+  }
+  .team{
+    padding: 90px 0;
+  }
+  .reviews{
+    padding: 90px 0;
+    &__inner{
+      margin: 40px 0;
+    }
+    &__item{
+      display: block;
+    }
+    &__item-img{
+      min-width: 250px;
+      max-height: 250px;
+      display: block;
+      margin: 0 auto 20px;
+    }
+  }
+  .gallery{
+    padding: 90px 0;
+  }
+  .contact{
+    padding: 90px 0;
+    &__title{
+      font-size: 30px;
+    }
+    &__form{
+      width: 100%;
+    }
+    &__form-group{
+      flex-wrap: wrap;
+      width: 100%;
+    }
+    &__input{
+      width: 100%;
+      &:first-child{
+        margin-right: 0;
+        margin-bottom: 30px;
+      }
+    } 
+  }
+  .footer{
+    &__bottom{
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    &__policity{
+      text-align: center;
+      margin-bottom: 20px;
+      margin-right: 0;
+    }
+  }
+}
+
+@media (max-width: 680px){
+  .header{
+    &__title{
+      font-size: 50px;
+      line-height: 60px;
+    }
+    &__btn:last-child{
+      display: none;
+    }
+    &__subtitle-top{
+      display: none;
+    }
+  }
+  .courses{
+    &__item{
+      margin: 25px 0;
+    }
+  }
+}
+
+@media (max-width: 590px){
+  .about{
+    &__inner{
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    &__info:last-child{
+      .about__info-item:first-child {
+      margin-top: 0;
+    }
+    }
+    &__info-item{
+      margin: 0 40px 40px;
+    }
+    &__info-item:first-child {
+      margin-bottom: 40px;
+    }
+    &__info-img{
+      display: none;
+    }
+  }
+  .numbers{
+    &__item{
+      margin: 0 80px 40px;
+    }
+  }
+  .courses{
+    &__item-link{
+      width: 100%;
+      height: calc(100% - 52px);
+    }
+    &__item-img{
+      height: auto;
+    }
+  }
+  .gallery{
+    &__inner{
+      grid-template-columns: repeat(1, 1fr);
+      grid-gap: 10px;
+    } 
+  }
+}
+
+@media (max-width: 475px){
+  .header{
+    &__logo {
+      font-size: 22px;
+    }
+    &__phone{
+      display: none;
+    }
+    &__content{
+      align-items: center;
+    }
+    &__title{
+      font-size: 40px;
+      line-height: 50px;
+      text-align: center;
+    }
+    &__subtitle-bottom {
+      font-size: 18px;
+      line-height: 22px;
+      margin: 20px 0 70px;
+      text-align: center;
+    }
+    &__btn{
+      margin-right: 0;
+    }
+  }
+  .menu__list-phone{
+    display: block;
+    margin-top: 70px;
+    font-size: 22px;
+    line-height: 24px;
+    font-weight: 700;
+    color: #fff;
+    transition: all .3s;
+    &:hover{
+      color: orangered;
+      transition: all .3s;
+    }
+  }
+  .reviews{
+    &__item-text,
+    &__item-student{
+      font-size: 15px;
+      line-height: 20px;
+    }
+  }
+  .courses{
+    &__item{
+      margin: 10px 0;
+    }
+  }
+}
+
+@media (max-width: 390px){
+  .header{
+    &__title{
+      font-size: 32px;
+      line-height: 34px;
+      text-align: center;
+      letter-spacing: 3px;
+    }
+    &__subtitle-bottom {
+      font-size: 16px;
+      line-height: 28px;
+      margin: 40px 0;  
+    }
+    &__buttons{
+      width: 100%;
+    }
+    &__btn{
+      width: 100%;
+    }
+  }
+  .menu__list{
+    height: 100vh;
+  }
+  .cost{
+    &__inner{
+      margin-top: 30px;
+    }
+    &__item-info{
+      padding: 30px 30px;
+    }
+  }
+  .team{
+    &__item{
+      width: 100%;
+      margin: 0 0 20px;
+    }
+    &__item-info{
+      width: 100%;
+      padding: 10px 20px;
+    }
+  }
+  .reviews{
+    &__item{
+      width: 100%;
+      padding: 30px 15px;
+    }
+    &__item-img{
+      min-width: 200px;
+      max-height: 200px;
+    }
+    
+    &__item-name{
+      font-size: 16px;
+    }
+  }
+  .contact{
+    &__form-btn{
+      margin-top: 55px;
+      width: 100%;
+    }
+  }
+  .footer{
+    &__bottom{
+      font-size: 14px;
+    }
+  }
+}
