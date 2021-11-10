@@ -105,11 +105,9 @@
     &__social-link:first-child{
       margin-left: 0;
     }
-    &__policity{
-      margin-right: 20px;
-    }
+    &__policity,
     &__agreement{
-      margin-right: 0;
+      margin-right: 20px;
     }
   }
 }
@@ -250,10 +248,14 @@
       align-items: center;
       text-align: center;
     }
-    &__policity{
+    &__policity,
+    &__agreement{
       text-align: center;
       margin-bottom: 20px;
       margin-right: 0;
+    }
+    &__design{
+      margin: 0 auto;
     }
   }
 }

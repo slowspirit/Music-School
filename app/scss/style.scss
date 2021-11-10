@@ -560,6 +560,21 @@
     margin-right: 60px;
     color: #fff;
   }
+  &__design{
+    color: #fff;
+    margin-left: auto;
+  }
+  &__design-link{
+    color: #fff;
+    transition: all .3s;
+    &:visited{
+      color: #fff;
+    }
+    &:hover{
+      color: orangered;
+      transition: all .3s;
+    }
+  }
 }
 
 @import "media";
