@@ -29,6 +29,7 @@
     top: 0;
     left: 0;
     right: 0;
+    padding: 10px 0;
     z-index: 10;
     background-color: #222;
   }
@@ -44,10 +45,8 @@
     line-height: 28px;
     font-weight: 700;
     color: #fff;
-    span{
-      text-transform: uppercase;
-      color: orangered;
-    }
+    text-transform: uppercase;
+    color: orangered;
   }
   &__phone{
     font-size: 20px;
