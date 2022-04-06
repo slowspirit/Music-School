@@ -1,3 +1,5 @@
 # Music-School
 
-## My own study project
+Адаптивная верстка лендинга музыкальной школы.
+
+https://slowspirit.github.io/Music-School/
