@@ -1,4 +1,4 @@
-# Music-School
+# Music-School / Easy Chords
 
 Адаптивная верстка лендинга музыкальной школы.
 
